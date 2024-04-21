@@ -21,4 +21,9 @@ import Search from '@/components/search/index.vue'
 
 const indexData = mapState<IndexData>().indexStore.value.data
 
+
+import('./asyncFec')
+.then(res => {
+  console.log("res:", res)
+})
 </script>
